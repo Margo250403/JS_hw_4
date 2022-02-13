@@ -1,17 +1,20 @@
 var text = prompt("Введите строку: My <b>name</b> is <i>Alex</i>")
 
-var result = ""
-var isChar = false
+var result = "";
+var isChar = true;
 
 for(var char of text) {
-     if(char === "<" || ">"){
+     if(char === "<"){
+          isChar = false;
           continue
      }
-          isFilter = true
-     if()
-     {
-          result += char 
+     if(char === ">"){
+          isChar = true;
+          continue
+     }
+     if(isChar){
+          result += char
      }
 }
 
-console.log(result)
+alert(result)
