@@ -1,7 +1,8 @@
-function wrapTags(str,tag)
+function wrapTags(str, tag) 
 {
-     var res = ""
-     return res += `<${tag}> ${str} </${tag}>`
+     var result = "";
+     return result += `<${tag}> ${str} </${tag}>`;
 }
- var res = wrapTags("Do not give up, the beginning is always the hardest", "mark")
-console.log(res) 
+var res = wrapTags("Do not give up, the beginning is always the hardest", "mark");
+
+console.log(res);
