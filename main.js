@@ -1,20 +1,7 @@
-var text = prompt("Введите строку: My <b>name</b> is <i>Alex</i>")
-
-var result = "";
-var isChar = true;
-
-for(var char of text) {
-     if(char === "<"){
-          isChar = false;
-          continue
-     }
-     if(char === ">"){
-          isChar = true;
-          continue
-     }
-     if(isChar){
-          result += char
-     }
+function wrapTags(str,tag)
+{
+     var res = ""
+     return res += `<${tag}> ${str} </${tag}>`
 }
-
-alert(result)
+ var res = wrapTags("Do not give up, the beginning is always the hardest", "mark")
+console.log(res) 
